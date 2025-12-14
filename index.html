@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zahra Dhaine — CV</title>
+  <meta name="description" content="Zahra Dhaine — versatile professional in education, occupational therapy assistance, speech therapy assistance, and content creation." />
+  <meta property="og:title" content="Zahra Dhaine — CV" />
+  <meta property="og:description" content="Education • Therapy Assistance • Photography • Video Editing • Business Management" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta name="theme-color" content="#2f5f7d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+          integrity="sha512-WC4VYFEu6O2pPHZl5qWqkqG0Z7d2j1k3vABP1Kgh9epA0I4fW2xw1fT4jJ8+J2Vt2Tj7K0uPOmDk1Pto1Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Zahra Dhaine</span>
+      </div>
+
+      <nav class="topnav" aria-label="Primary">
+        <a href="#profile">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <div class="container mobile-menu__inner">
+        <a href="#profile">Profile</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="profile">
+      <div class="container hero__grid">
+        <div class="card hero__card">
+          <div class="hero__header">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/profile.jpg" alt="Portrait of Zahra Dhaine" loading="eager" />
+            </div>
+
+            <div>
+              <h1 class="hero__title">Zahra Dhaine</h1>
+              <p class="hero__subtitle">
+                Education • Occupational Therapy Assistant • Speech Therapy Assistant • Photography • Video Editing • Retail Business Management
+              </p>
+
+              <div class="pill-row" role="list" aria-label="Highlights">
+                <span class="pill" role="listitem">5+ years in education</span>
+                <span class="pill" role="listitem">2+ years therapy assistance</span>
+                <span class="pill" role="listitem">Content creation</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="hero__summary">
+            Versatile professional with over 5 years of experience in education and more than 2 years as an occupational and speech therapy assistant.
+            Creative, with strong skills in photography, video editing, and content creation, and proven experience in managing a retail business
+            specializing in branded bags and cosmetic products.
+          </p>
+
+          <div class="quick-actions">
+            <a class="btn btn--primary" href="#contact">Contact</a>
+            <button class="btn btn--ghost" id="copyLinkBtn" type="button">Copy website link</button>
+          </div>
+        </div>
+
+        <aside class="card sidecard" aria-label="Personal information">
+          <h2 class="section-title">Personal</h2>
+
+          <dl class="kv">
+            <div class="kv__row">
+              <dt>Address</dt>
+              <dd>Kinshasa, Democratic Republic of the Congo</dd>
+            </div>
+            <div class="kv__row">
+              <dt>Phone</dt>
+              <dd><a href="tel:+243998971075">+243 998 971 075</a></dd>
+            </div>
+            <div class="kv__row">
+              <dt>Email</dt>
+              <dd><a href="mailto:dhainezara@gmail.com">dhainezara@gmail.com</a></dd>
+            </div>
+            <div class="kv__row">
+              <dt>Date of birth</dt>
+              <dd>09-08-2008</dd>
+            </div>
+            <div class="kv__row">
+              <dt>Gender</dt>
+              <dd>Female</dd>
+            </div>
+            <div class="kv__row">
+              <dt>Nationality</dt>
+              <dd>Congolese • Lebanese</dd>
+            </div>
+          </dl>
+
+          <div class="divider"></div>
+
+          <h2 class="section-title">QR Code</h2>
+          <p class="muted">
+            After you publish on GitHub Pages, paste your final URL here to generate a QR code.
+          </p>
+
+          <label class="label" for="siteUrl">Website URL</label>
+          <div class="qr-controls">
+            <input id="siteUrl" class="input" type="url" inputmode="url"
+                   placeholder="https://username.github.io/repo/" />
+            <button class="btn btn--primary btn--small" id="genQrBtn" type="button">Generate</button>
+          </div>
+
+          <div class="qr-wrap" aria-live="polite">
+            <div id="qrTarget" class="qr" aria-label="QR code area"></div>
+            <div class="qr-actions">
+              <button class="btn btn--ghost btn--small" id="downloadQrBtn" type="button" disabled>Download QR</button>
+            </div>
+          </div>
+
+          <p class="tip">
+            Tip: keep the URL ending with <code>/</code> for GitHub Pages.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Work Experience</h2>
+          <p class="muted">Recent roles and responsibilities.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="card timeline__item">
+            <div class="timeline__meta">
+              <span class="badge">Present</span>
+              <span class="muted">Kinshasa</span>
+            </div>
+            <h3 class="h3">Educator</h3>
+            <p class="muted">Basma et Besme Children’s Daycare</p>
+            <ul class="list">
+              <li>Support classroom routines and age-appropriate learning activities.</li>
+              <li>Provide a safe, structured, and caring environment for children.</li>
+              <li>Collaborate with staff and parents to improve child wellbeing.</li>
+            </ul>
+          </article>
+
+          <article class="card timeline__item">
+            <div class="timeline__meta">
+              <span class="badge">Present</span>
+              <span class="muted">Kinshasa</span>
+            </div>
+            <h3 class="h3">Founder &amp; Business Manager (Owner)</h3>
+            <p class="muted">Retail business — branded bags &amp; cosmetic products</p>
+            <ul class="list">
+              <li>Manage product selection, pricing, and day-to-day operations.</li>
+              <li>Create photo/video content for promotion and customer engagement.</li>
+              <li>Coordinate sales, customer communication, and inventory follow-up.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Skills</h2>
+          <p class="muted">Core strengths and technical capabilities.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="h3">Professional</h3>
+            <div class="stars">
+              <div class="stars__row"><span>Strong interpersonal skills</span> <span class="stars__bar" data-stars="5"></span></div>
+              <div class="stars__row"><span>Patience</span> <span class="stars__bar" data-stars="5"></span></div>
+              <div class="stars__row"><span>Responsible and reliable</span> <span class="stars__bar" data-stars="5"></span></div>
+              <div class="stars__row"><span>Highly organized</span> <span class="stars__bar" data-stars="4"></span></div>
+              <div class="stars__row"><span>Adaptability and flexibility</span> <span class="stars__bar" data-stars="4"></span></div>
+              <div class="stars__row"><span>Strong team player</span> <span class="stars__bar" data-stars="5"></span></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Technical &amp; Creative</h3>
+            <div class="chips">
+              <span class="chip">Education &amp; pedagogical support</span>
+              <span class="chip">Occupational therapy assistance</span>
+              <span class="chip">Speech therapy assistance</span>
+              <span class="chip">Photography</span>
+              <span class="chip">Video editing</span>
+              <span class="chip">Content creation</span>
+              <span class="chip">Retail management</span>
+              <span class="chip">Customer service</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt">
+          <h3 class="h3">Languages</h3>
+          <div class="lang-grid">
+            <div class="lang">
+              <span class="lang__name">French</span>
+              <span class="lang__dots" data-dots="5"></span>
+            </div>
+            <div class="lang">
+              <span class="lang__name">Arabic</span>
+              <span class="lang__dots" data-dots="5"></span>
+            </div>
+            <div class="lang">
+              <span class="lang__name">English</span>
+              <span class="lang__dots" data-dots="2"></span>
+            </div>
+            <div class="lang">
+              <span class="lang__name">Lingala</span>
+              <span class="lang__dots" data-dots="4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Education</h2>
+          <p class="muted">Academic background.</p>
+        </div>
+
+        <div class="card">
+          <div class="edu">
+            <div class="edu__icon" aria-hidden="true">🎓</div>
+            <div>
+              <h3 class="h3">SV — Final Year</h3>
+              <p class="muted">Lebanese High School, Kinshasa</p>
+              <p class="muted">2025–2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2 mt">
+          <div class="card">
+            <h3 class="h3">Interests</h3>
+            <ul class="list">
+              <li>Photography</li>
+              <li>Video creation and editing</li>
+              <li>Entrepreneurship and business</li>
+              <li>Content creation</li>
+              <li>Fashion and cosmetics</li>
+            </ul>
+          </div>
+
+          <div class="card" id="contact">
+            <h3 class="h3">Contact</h3>
+            <p class="muted">If you’d like to reach out, use any channel below.</p>
+            <div class="contact">
+              <a class="contact__item" href="mailto:dhainezara@gmail.com">
+                <span class="contact__label">Email</span>
+                <span class="contact__value">dhainezara@gmail.com</span>
+              </a>
+              <a class="contact__item" href="tel:+243998971075">
+                <span class="contact__label">Phone</span>
+                <span class="contact__value">+243 998 971 075</span>
+              </a>
+              <div class="contact__item">
+                <span class="contact__label">Location</span>
+                <span class="contact__value">Kinshasa, DRC</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <form class="mini-form" id="msgForm">
+              <p class="muted">Optional: copy-ready message template</p>
+              <label class="label" for="msg">Message</label>
+              <textarea id="msg" class="textarea" rows="4">Hello Zahra, I viewed your CV website and would like to discuss an opportunity.</textarea>
+              <button class="btn btn--primary" type="submit">Copy message</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted">© <span id="year"></span> Zahra Dhaine</span>
+      <span class="muted">Built as a lightweight, GitHub Pages-ready CV site.</span>
+    </div>
+  </footer>
+</body>
+</html>
